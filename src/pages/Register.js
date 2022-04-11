@@ -75,7 +75,7 @@ const Register = () => {
             type="submit"
             className="btn btn-primary form-control"
             value="Register"
-            onSubmit={handleSubmit}
+            // onSubmit={handleSubmit}
           />
         </form>
       </div>
