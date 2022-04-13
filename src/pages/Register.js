@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { createUSer } from "../auth/firebase";
+import { createUser } from "../auth/firebase";
 
 const Register = () => {
   const [firstName, setFirstName] = useState();
@@ -10,8 +10,9 @@ const Register = () => {
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
+    const displayName = `${firstName} ${lastName}`;
     e.preventDefault();
-    createUSer(email, password, navigate);
+    createUser(email, password, displayName, navigate);
 
     console.log(firstName, lastName);
   };
