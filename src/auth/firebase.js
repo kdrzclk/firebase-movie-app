@@ -79,11 +79,12 @@ export const userObserver = (setCurrentUser) => {
 
 //* https://console.firebase.google.com/
 //* => Authentication => sign-in-method => enable Google
-export const signUpProvider = () => {
+export const signUpProvider = (navigate) => {
   const provider = new GoogleAuthProvider();
   signInWithPopup(auth, provider)
     .then((result) => {
       console.log(result);
+      navigate("/");
     })
     .catch((error) => {
       console.log(error);
