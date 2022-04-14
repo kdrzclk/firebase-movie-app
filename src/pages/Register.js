@@ -14,7 +14,7 @@ const Register = () => {
     e.preventDefault();
     createUser(email, password, displayName, navigate);
 
-    console.log(firstName, lastName);
+    console.log(firstName, lastName, displayName);
   };
   return (
     <div className="d-flex justify-content-center">

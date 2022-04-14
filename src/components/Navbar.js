@@ -6,7 +6,7 @@ import { AuthContext } from "../context/AuthContext";
 const Navbar = () => {
   const navigate = useNavigate();
   const { currentUser } = useContext(AuthContext);
-  // const currentUser = { displayName: "felix franko" };
+  // const currentUser = { displayName: "kadir özçelik" };
   // const currentUser = false;
   return (
     <div>
